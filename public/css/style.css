@@ -296,7 +296,7 @@ footer .fa-solid:hover{
 }
 
 
-@media (min-width:361px){
+@media (min-width:460px){
     .conteiner{
         display: flex;
         flex-wrap: wrap;
@@ -327,7 +327,7 @@ footer .fa-solid:hover{
 
 }
 
-@media (min-width:769px){
+@media (min-width:768px){
     .conteiner{
         display: flex;
         flex-wrap: wrap;
