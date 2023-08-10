@@ -1,4 +1,5 @@
 *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,9 +11,17 @@
     --GrisOscuro: #666;
     --GrisClaro: #ebebeb;
     --Verde: #39b54a;
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
 }
 
 
+body{
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -25,18 +34,29 @@ body{
 .logo{
     width: 100px;
     padding: 5px;
+.logo{
+    width: 100px;
+    padding: 5px;
 }
 
 .logo img {
     padding: 1em;
     width: 20%;
+    width: 20%;
 }
 
 .barraBusqueda{
     margin: 10px;
+.barraBusqueda{
+    margin: 10px;
     position: relative;
     width: 45%;
+    width: 45%;
 }
+input{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 input{
     border: none;
     padding: 10px;
@@ -45,7 +65,10 @@ input{
 }
 
 .lupa{
+.lupa{
     position: absolute;
+    top: 10px;
+    right: 8px;
     top: 10px;
     right: 8px;
     border: none;
@@ -63,13 +86,33 @@ input{
 
 .barraBusqueda {
     flex-grow: 0.50;
+    background-color: white;
+    
 }
 
+.barraPrincipal{
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.barraBusqueda {
+    flex-grow: 0.50;
+}
+
+.banner{
 .banner{
     width: 100%;
     background-color:var(--GrisClaro);
     
+    background-color:var(--GrisClaro);
+    
 }
+
+.banner img {
+    width: 100%;
 
 .banner img {
     width: 100%;
@@ -78,9 +121,18 @@ input{
 .colorFondo{
     background-color: var(--Amarillo);
     
+.colorFondo{
+    background-color: var(--Amarillo);
+    
 }
 
-.burger-menu{
+.burger-burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;  
+}
+.menu-opciones {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,8 +188,16 @@ main{
     background-color: var(--GrisClaro);
     width: 100%;
     padding: 20px;
+main{
+    background-color: var(--GrisClaro);
+    width: 100%;
+    padding: 20px;
 }
 
+.titulares{
+    font-size: 24px;
+    color: #666;
+    padding: 10px 20px;
 .titulares{
     font-size: 24px;
     color: #666;
@@ -145,7 +205,15 @@ main{
 }
 
 .precio{
+.precio{
     font-size: 18px;
+    padding-right: 10%;
+}
+
+.descuento{
+    font-size: 16px ;
+    color: var(--Verde);
+    width: 60px;
     padding-right: 10%;
 }
 
@@ -156,15 +224,24 @@ main{
 }
 
 .descripcion{
+.descripcion{
     font-size: 16px;
+    display: none;
     display: none;
 }
 
 .detalles{
     border-top: 1px solid #ebebeb;
     padding: 15px;
+.detalles{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
 }
 
+.fa-truck{
+    color: var(--Verde);
+    font-size: 16px;
+    display: block;
 .fa-truck{
     color: var(--Verde);
     font-size: 16px;
@@ -196,8 +273,45 @@ main{
     margin: 10px;
     border-left: 15px;
     border-right: 15px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 500ms;
 }
 
+.fa-truck:hover{
+    transform: rotate(-90deg);
+}
+
+.camion{
+    position: relative;
+}
+
+.card{
+    background-color: white;
+    width: 90%;
+    margin: 10px;
+    border-left: 15px;
+    border-right: 15px;
+}
+
+.card:hover .descripcion{
+    display: block;
+    
+}
+
+.card:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);display: block;
+}
+
+.card img{
+    width: 100%;
 .card:hover .descripcion{
     display: block;
     
