@@ -28,7 +28,7 @@
                         <button class="lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-                <p class="caja"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
+                <p class="text-center"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
             </div>
             <div class="menu">
                 <ul class="item">
@@ -49,12 +49,47 @@
     </header>
 
     <main>
-        <form class="loginML" action="/" method="get">
-           
-            <input type="text" name="usuario" placeholder="Nobre de usuario">
-            <input type="password" name="" placeholder="Elegi tu contraseña">
-            <button type="submit">Enviar</button>
-
+        <form class="formulario" action="/" method="get">
+            <label for="name">Nobre y Apellido</label>
+            <input type="text" name="nombre" id="name">
+            <label for="user">Nobre de usuario</label>
+            <input type="text" name="usuario" id="user">
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="usuario" id="date" value="1/1/2000">
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="casa" id="dimicilio">
+            <label for="">Perfil de usuario</label>
+                <div class="casilla">
+                    <input type="radio" name="perfil" id="perfil" value="Compradror">
+                    <label for="comprador">Comprador</label>
+                    <input type="radio" name="perfil" id="perfil" value="Vendedor">
+                    <label for="vendedor">Vendedor</label>
+                    </div>
+            <label for="">Categorias de Interes</label>
+                <div class="casilla">
+                    <input type="checkbox" name="categoria">
+                    <label for="">Electro</label>
+                </div>
+                <div class="casilla">
+                    <input type="checkbox" name="categoria">
+                    <label for="">Moda</label>
+                </div>
+                <div class="casilla">
+                    <input type="checkbox" name="categoria">
+                    <label for="">Hogar</label>
+                </div>
+                <div class="casilla">
+                    <input type="checkbox" name="categoria">
+                    <label for="">Juguetería</label>
+                </div>
+                <div class="casilla">
+                    <input type="checkbox" name="categorai">
+                    <label for="">Vida sana</label>
+                </div>
+            <div class="boton-formulario">
+                <button type="submit" name="enviar">Enviar</button>
+                <input type="reset" name="resetear" value="Borrar">
+            </div>
         </form>
         
     </main>
